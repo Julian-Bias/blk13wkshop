@@ -1,5 +1,5 @@
 function convertToCelsius(fahrenheit) {
-  return Math.round(fahrenheit - (32 * 5) / 9);
+  return Math.round(fahrenheit - 32) * (5 / 9);
 }
 
 function createMessage(fahrenheit, convertToCelsius) {
@@ -11,7 +11,7 @@ function createMessage(fahrenheit, convertToCelsius) {
     message = "Cold!";
   } else if (numFahrenheit < 86) {
     message = "Hot!";
-  } else if (numFahrenheit < 110) {
+  } else if (numFahrenheit < 100) {
     message = "Very Hot";
   }
 
